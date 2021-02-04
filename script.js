@@ -11,7 +11,9 @@ document.getElementById(`score--1`).textContent = 0;
 const roll = function () {
   if (!win) {
     const numero = Math.trunc(Math.random() * 6) + 1;
-    document.querySelector('.dice').setAttribute('src', `dice-${numero}.png`);
+    document
+      .querySelector('.dice')
+      .setAttribute('src', `images/dice-${numero}.png`);
     if (numero !== 1) {
       currentScore += numero;
       document.getElementById(
